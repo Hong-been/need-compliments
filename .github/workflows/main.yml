@@ -20,7 +20,7 @@ jobs:
                                 # complains about unrelated histories without it.
                                 # (but actions/checkout@v2 can also be instructed
                                 # to fetch all git depth right from the start)
-          git remote add upstream https://github.com/zzzzsb/2022-Algorithm-Study.git
+          git remote add upstream https://github.com/Tinkerbell-Green/need-compliments.git
           git fetch upstream
           git checkout master
           git merge -Xtheirs upstream/master
