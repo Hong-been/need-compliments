@@ -63,14 +63,14 @@ const Home: NextPage = () => {
 export const getServerSideProps = wrapper.getServerSideProps(store => async ({req, res, ...etc}) => {
   const GET_PUBLIC_TASKS_KEY = ""
 
-  store.dispatch(dataActionCreators[DataActionType.GET_PUBLIC_TASKS]({
-    author: undefined,
-    key: GET_PUBLIC_TASKS_KEY,
-    startTime: new Date("1999-11-11"),
-    endTime: new Date("2222-11-11"),
-  }))
+  // store.dispatch(dataActionCreators[DataActionType.GET_PUBLIC_TASKS]({
+  //   author: undefined,
+  //   key: GET_PUBLIC_TASKS_KEY,
+  //   startTime: new Date("1999-11-11"),
+  //   endTime: new Date("2222-11-11"),
+  // }))
 
-  await waitDuringLoading(store, {actionType: DataActionType.GET_PUBLIC_TASKS, key: GET_PUBLIC_TASKS_KEY})
+  // await waitDuringLoading(store, {actionType: DataActionType.GET_PUBLIC_TASKS, key: GET_PUBLIC_TASKS_KEY})
 
   return ({
     props: {}
